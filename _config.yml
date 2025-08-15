@@ -1,0 +1,27 @@
+title: Hadley Edwards — Portfolio
+description: Designer & AI/Data — selected work, notes, and contact.
+theme: minima
+url: ''
+baseurl: ''
+author:
+  name: Hadley Edwards
+  email: hadleyillustrates@gmail.com
+collections:
+  projects:
+    output: true
+    permalink: /work/:name/
+minima:
+  skin: auto
+  social_links:
+  - platform: github
+    user_url: https://github.com/
+  - platform: linkedin
+    user_url: https://www.linkedin.com/in/
+  - platform: x
+    user_url: https://x.com/
+markdown: kramdown
+plugins:
+- jekyll-seo-tag
+- jekyll-feed
+sass:
+  sass_dir: assets

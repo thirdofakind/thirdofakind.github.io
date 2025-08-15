@@ -1,0 +1,12 @@
+<svg width="180" height="32" viewBox="0 0 180 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hadley">
+  <title>Hadley</title>
+  <rect fill="none" width="100%" height="100%"/>
+  <g fill="none" stroke="#3A7BFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 26 V6 M4 16 H20 M20 26 V6" />       <!-- H -->
+    <path d="M34 26 V12 Q34 6 42 6 Q50 6 50 12 V26"/> <!-- a-like -->
+    <path d="M64 26 V12 Q64 6 72 6 Q80 6 80 12 V26"/> <!-- d-like -->
+    <path d="M94 26 V6 H110" />                       <!-- l -->
+    <path d="M124 26 V12 Q124 6 132 6 Q140 6 140 12 V26"/> <!-- e-like -->
+    <path d="M154 6 V26 H172" />                      <!-- y -->
+  </g>
+</svg>
