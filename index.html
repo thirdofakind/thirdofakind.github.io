@@ -30,7 +30,6 @@
       linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
     }
     .container{max-width:1080px; margin:0 auto; padding:24px}
-    /* header */
     header{position:sticky; top:0; z-index:10; background:color-mix(in oklab, var(--bg) 85%, transparent); backdrop-filter:saturate(130%) blur(10px); border-bottom:1px solid var(--border)}
     .bar{display:flex; align-items:center; justify-content:space-between; gap:16px}
     .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
@@ -39,7 +38,6 @@
     nav a{color:var(--muted); text-decoration:none; margin-left:16px}
     nav a:hover{color:var(--text)}
     .btn{appearance:none; border:1px solid var(--border); background:var(--card); color:var(--text); padding:9px 14px; border-radius:999px; cursor:pointer; box-shadow:var(--shadow)}
-    /* hero */
     .hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; padding:42px 0}
     h1{font-size:clamp(28px, 5vw, 48px); line-height:1.08; margin:0 0 10px}
     .lead{color:var(--muted)}
@@ -47,26 +45,20 @@
     .badge{border:1px solid var(--border); background:var(--card); padding:6px 10px; border-radius:999px; font-size:14px}
     .panel{background:var(--card); border:1px solid var(--border); border-radius:18px; padding:18px; box-shadow:var(--shadow)}
     .cta{display:flex; gap:12px; margin-top:14px; flex-wrap:wrap}
-    /* sections */
     section{padding:26px 0}
     h2{font-size:22px; margin:0 0 16px}
-    /* projects */
     .grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px}
     .project{display:flex; flex-direction:column; gap:10px}
     .thumb{border-radius:14px; border:1px solid var(--border); background:linear-gradient(180deg, #0f1522, #0c101a); aspect-ratio:16/10; display:grid; place-items:center}
     .project h3{margin:0; font-size:18px}
     .project p{margin:0; color:var(--muted)}
     .project a{margin-top:auto; text-decoration:none; color:var(--brand)}
-    /* writing */
     .list{display:grid; gap:10px}
     .list a{color:var(--text); text-decoration:none; border:1px solid var(--border); border-radius:12px; padding:12px 14px; background:var(--card)}
     .list a span{color:var(--muted)}
-    /* footer */
     footer{border-top:1px solid var(--border); margin-top:36px; padding:26px 0; color:var(--muted)}
-    /* responsive */
     @media (max-width:900px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr 1fr} }
     @media (max-width:640px){ .grid{grid-template-columns:1fr} }
-    /* access helpers */
     .skip{position:absolute; left:-9999px}
     .skip:focus{left:12px; top:12px; background:var(--brand); color:#0b0c10; padding:8px 10px; border-radius:10px}
   </style>
@@ -76,17 +68,14 @@
   <header>
     <div class="container bar">
       <a class="brand" href="#">
-        <!-- Inline SVG logo: "H" built from two rotated brackets and a dot -->
-        <svg class="logo" viewBox="0 0 1080 1080" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <!-- Inline SVG logo -->
+        <svg class="logo" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <g fill="currentColor">
-
-    <g>
-        <g transform="matrix(8.33333,0,0,8.33333,659.434,209.19)">
-            <path d="M0,78.573C-4.347,78.573 -7.872,75.051 -7.87..." style="fill-rule:nonzero;"/>
-        </g>
-        <g transform="matrix(0,-8.33333,-8.33333,0,841.378,746.431)">
-            <path d="M-7.464,-7.464C-3.343,-7.464 -0.002,-4.123 ..." style="fill-rule:nonzero;"/>
-        </g>
+    <g transform="matrix(8.33333,0,0,8.33333,659.434,209.19)">
+      <path d="M0,78.573C-4.347,78.573 -7.872,75.051 -7.872,70.701L-7.872,60.295C-7.872,53.574 -13.318,48.125 -20.039,48.125C-26.76,48.125 -32.208,53.574 -32.208,60.295L-32.208,66.406C-32.208,73.125 -37.656,78.573 -44.375,78.573L-45.795,78.573C-52.513,78.573 -57.961,73.125 -57.961,66.406L-57.961,12.167C-57.961,5.449 -52.513,0 -45.795,0L-44.375,0C-37.656,0 -32.208,5.449 -32.208,12.167L-32.208,14.35C-32.208,21.07 -26.76,26.519 -20.039,26.519C-13.318,26.519 -7.872,21.07 -7.872,14.35L-7.872,12.167C-7.872,5.449 -2.424,0 4.297,0L5.715,0C12.436,0 17.884,5.449 17.884,12.167L17.884,53.211C17.884,56.205 16.192,58.96 13.496,60.266C10.134,61.896 7.817,65.341 7.817,69.328C7.817,69.587 7.828,69.843 7.846,70.097C8.19,74.652 4.702,78.573 0.135,78.573L0,78.573Z"/>
+    </g>
+    <g transform="matrix(0,-8.33333,-8.33333,0,841.378,746.431)">
+      <path d="M-7.464,-7.464C-3.343,-7.464 -0.002,-4.123 -0.002,-0.002C-0.002,4.123 -3.343,7.464 -7.464,7.464C-11.584,7.464 -14.926,4.123 -14.926,-0.002C-14.926,-4.123 -11.584,-7.464 -7.464,-7.464"/>
     </g>
   </g>
 </svg>
@@ -178,9 +167,7 @@
   </main>
 
   <script>
-    // Year stamp
     document.getElementById('y').textContent = new Date().getFullYear();
-    // Theme toggle
     const btn = document.getElementById('themeBtn');
     const key = 'theme';
     const set = (mode)=>{
